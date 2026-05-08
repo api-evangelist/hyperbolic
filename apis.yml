@@ -3,7 +3,10 @@ url: https://raw.githubusercontent.com/api-evangelist/hyperbolic/refs/heads/main
 name: Hyperbolic
 x-type: company
 description: >-
-  Hyperbolic is an open-access AI cloud offering on-demand GPU rentals and LLM inference. Hosts open-source models (Llama, Qwen, DeepSeek, Pixtral) and exposes both serverless inference and bare-metal GPU APIs.
+  Hyperbolic Labs is an open-access AI cloud offering on-demand GPU rentals and serverless
+  LLM inference. Hosts 25+ open-source models with OpenAI-compatible chat, vision, image
+  generation (FLUX, Stable Diffusion, LoRA), and audio (Melo TTS) APIs. Reserved-cluster
+  pricing available with 3-12 month commitments and up to 40% discount.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - AI
@@ -11,13 +14,67 @@ tags:
   - Inference
   - GPU
   - Open Source
+  - Serverless
+  - Image Generation
+  - Audio
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: hyperbolic:inference
+    name: Hyperbolic Serverless Inference API
+    description: >-
+      OpenAI-compatible inference API for 25+ open-source models. Surfaces include text
+      chat, vision, image generation (FLUX, Stable Diffusion, LoRA adapters), and audio
+      (Melo TTS). Pay-as-you-go from $0.0001 per 1K tokens.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.hyperbolic.ai/docs/inference/overview
+    baseURL: https://api.hyperbolic.xyz/v1
+    tags:
+      - AI
+      - LLM
+      - Chat Completions
+      - Vision
+      - Image Generation
+      - Audio
+      - OpenAI Compatible
+    properties:
+      - type: Documentation
+        url: https://docs.hyperbolic.ai/
+      - type: Quickstart
+        url: https://docs.hyperbolic.ai/docs/inference/quickstart
+      - type: SignUp
+        url: https://app.hyperbolic.ai/
+      - type: Pricing
+        url: https://hyperbolic.ai/pricing
+      - type: RateLimits
+        url: https://docs.hyperbolic.ai/docs/inference/performance-limits
+      - type: Integrations
+        url: https://docs.hyperbolic.ai/docs/inference/integrations
+  - aid: hyperbolic:gpu
+    name: Hyperbolic On-Demand GPU API
+    description: >-
+      Bare-metal GPU rental with SSH access for full control. Hourly rates from $1.39-$1.99
+      with no long-term commitments. Reserved clusters available monthly/annually with up
+      to 40% discount.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.hyperbolic.ai/
+    baseURL: https://api.hyperbolic.xyz
+    tags:
+      - GPU
+      - Compute
+      - Infrastructure
+      - SSH
+    properties:
+      - type: Documentation
+        url: https://docs.hyperbolic.ai/
+      - type: Pricing
+        url: https://hyperbolic.ai/pricing
 common:
   - type: Website
     url: https://hyperbolic.xyz/
+  - type: Documentation
+    url: https://docs.hyperbolic.ai/
   - type: Plans
     url: plans/hyperbolic-plans-pricing.yml
   - type: RateLimits
