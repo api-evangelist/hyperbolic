@@ -1,0 +1,29 @@
+aid: hyperbolic
+url: https://raw.githubusercontent.com/api-evangelist/hyperbolic/refs/heads/main/apis.yml
+name: Hyperbolic
+x-type: company
+description: >-
+  Hyperbolic is an open-access AI cloud offering on-demand GPU rentals and LLM inference. Hosts open-source models (Llama, Qwen, DeepSeek, Pixtral) and exposes both serverless inference and bare-metal GPU APIs.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - AI
+  - LLM
+  - Inference
+  - GPU
+  - Open Source
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://hyperbolic.xyz/
+  - type: Plans
+    url: plans/hyperbolic-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/hyperbolic-rate-limits.yml
+  - type: FinOps
+    url: finops/hyperbolic-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
