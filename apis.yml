@@ -1,7 +1,7 @@
 aid: hyperbolic
 url: https://raw.githubusercontent.com/api-evangelist/hyperbolic/refs/heads/main/apis.yml
 name: Hyperbolic
-x-type: company
+kind: company
 description: >-
   Hyperbolic Labs is an open-access AI cloud offering on-demand GPU rentals and serverless
   LLM inference. Hosts 25+ open-source models with OpenAI-compatible chat, vision, image
