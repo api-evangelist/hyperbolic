@@ -71,6 +71,10 @@ apis:
       - type: Pricing
         url: https://hyperbolic.ai/pricing
 common:
+  - type: GitHubOrganization
+    url: https://github.com/HyperbolicLabs
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/hyperbolic-labs
   - type: Website
     url: https://hyperbolic.xyz/
   - type: Documentation
