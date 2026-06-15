@@ -1,0 +1,87 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Hyperbolic Inference API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Create chat completion",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.hyperbolic.xyz/v1/chat/completions",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create chat completion"
+    },
+    {
+      "info": {
+        "name": "Create text completion",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.hyperbolic.xyz/v1/completions",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create text completion"
+    },
+    {
+      "info": {
+        "name": "List available models",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.hyperbolic.xyz/v1/models"
+      },
+      "docs": "List available models"
+    },
+    {
+      "info": {
+        "name": "Generate image",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.hyperbolic.xyz/v1/image/generation",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Generate image"
+    },
+    {
+      "info": {
+        "name": "Generate audio",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.hyperbolic.xyz/v1/audio/generation",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Generate audio"
+    }
+  ],
+  "bundled": true
+}
