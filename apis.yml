@@ -7,7 +7,7 @@ description: >-
   LLM inference. Hosts 25+ open-source models with OpenAI-compatible chat, vision, image
   generation (FLUX, Stable Diffusion, LoRA), and audio (Melo TTS) APIs. Reserved-cluster
   pricing available with 3-12 month commitments and up to 40% discount.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - AI
   - LLM
@@ -27,7 +27,7 @@ apis:
       OpenAI-compatible inference API for 25+ open-source models. Surfaces include text
       chat, vision, image generation (FLUX, Stable Diffusion, LoRA adapters), and audio
       (Melo TTS). Pay-as-you-go from $0.0001 per 1K tokens.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.hyperbolic.ai/docs/inference/overview
     baseURL: https://api.hyperbolic.xyz/v1
     tags:
@@ -57,7 +57,7 @@ apis:
       Bare-metal GPU rental with SSH access for full control. Hourly rates from $1.39-$1.99
       with no long-term commitments. Reserved clusters available monthly/annually with up
       to 40% discount.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.hyperbolic.ai/
     baseURL: https://api.hyperbolic.xyz
     tags:
