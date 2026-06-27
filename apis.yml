@@ -41,9 +41,9 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.hyperbolic.ai/
-      - type: Quickstart
+      - type: GettingStarted
         url: https://docs.hyperbolic.ai/docs/inference/quickstart
-      - type: SignUp
+      - type: Signup
         url: https://app.hyperbolic.ai/
       - type: Pricing
         url: https://hyperbolic.ai/pricing
