@@ -71,6 +71,10 @@ apis:
       - type: Pricing
         url: https://hyperbolic.ai/pricing
 common:
+  - type: DomainSecurity
+    url: security/hyperbolic-domain-security.yml
+  - type: Authentication
+    url: authentication/hyperbolic-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/HyperbolicLabs
   - type: LinkedIn
@@ -85,6 +89,8 @@ common:
     url: rate-limits/hyperbolic-rate-limits.yml
   - type: FinOps
     url: finops/hyperbolic-finops.yml
+  - url: https://hyperbolic.ai/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
