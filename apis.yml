@@ -71,6 +71,8 @@ apis:
       - type: Pricing
         url: https://hyperbolic.ai/pricing
 common:
+  - type: AgenticAccess
+    url: agentic-access/hyperbolic-agentic-access.yml
   - type: DomainSecurity
     url: security/hyperbolic-domain-security.yml
   - type: Authentication
