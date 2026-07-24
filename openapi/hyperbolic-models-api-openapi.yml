@@ -1,0 +1,43 @@
+openapi: 3.1.0
+info:
+  title: Hyperbolic Inference Audio Models API
+  description: 'Hyperbolic offers OpenAI-compatible serverless inference for chat, completion,
+
+    image generation and audio. Authenticate with an API key as a Bearer token.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Hyperbolic Docs
+    url: https://hyperbolic.ai/docs/
+servers:
+- url: https://api.hyperbolic.xyz/v1
+security:
+- bearerAuth: []
+tags:
+- name: Models
+paths:
+  /models:
+    get:
+      summary: List available models
+      operationId: listModels
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+      tags:
+      - Models
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key

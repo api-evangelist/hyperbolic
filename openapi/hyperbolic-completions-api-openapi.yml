@@ -1,0 +1,52 @@
+openapi: 3.1.0
+info:
+  title: Hyperbolic Inference Audio Completions API
+  description: 'Hyperbolic offers OpenAI-compatible serverless inference for chat, completion,
+
+    image generation and audio. Authenticate with an API key as a Bearer token.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Hyperbolic Docs
+    url: https://hyperbolic.ai/docs/
+servers:
+- url: https://api.hyperbolic.xyz/v1
+security:
+- bearerAuth: []
+tags:
+- name: Completions
+paths:
+  /completions:
+    post:
+      summary: Create text completion
+      operationId: createCompletion
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - model
+              - prompt
+              properties:
+                model:
+                  type: string
+                prompt:
+                  type: string
+                max_tokens:
+                  type: integer
+                temperature:
+                  type: number
+      responses:
+        '200':
+          description: Completion
+      tags:
+      - Completions
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Key
