@@ -7,7 +7,20 @@ description: >-
   LLM inference. Hosts 25+ open-source models with OpenAI-compatible chat, vision, image
   generation (FLUX, Stable Diffusion, LoRA), and audio (Melo TTS) APIs. Reserved-cluster
   pricing available with 3-12 month commitments and up to 40% discount.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hyperbolic.png
 tags:
   - AI
   - LLM
@@ -21,55 +34,104 @@ created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
 apis:
-  - aid: hyperbolic:inference
-    name: Hyperbolic Serverless Inference API
-    description: >-
-      OpenAI-compatible inference API for 25+ open-source models. Surfaces include text
-      chat, vision, image generation (FLUX, Stable Diffusion, LoRA adapters), and audio
-      (Melo TTS). Pay-as-you-go from $0.0001 per 1K tokens.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.hyperbolic.ai/docs/inference/overview
-    baseURL: https://api.hyperbolic.xyz/v1
-    tags:
-      - AI
-      - LLM
-      - Chat Completions
-      - Vision
-      - Image Generation
-      - Audio
-      - OpenAI Compatible
-    properties:
-      - type: Documentation
-        url: https://docs.hyperbolic.ai/
-      - type: GettingStarted
-        url: https://docs.hyperbolic.ai/docs/inference/quickstart
-      - type: Signup
-        url: https://app.hyperbolic.ai/
-      - type: Pricing
-        url: https://hyperbolic.ai/pricing
-      - type: RateLimits
-        url: https://docs.hyperbolic.ai/docs/inference/performance-limits
-      - type: Integrations
-        url: https://docs.hyperbolic.ai/docs/inference/integrations
-  - aid: hyperbolic:gpu
-    name: Hyperbolic On-Demand GPU API
-    description: >-
-      Bare-metal GPU rental with SSH access for full control. Hourly rates from $1.39-$1.99
-      with no long-term commitments. Reserved clusters available monthly/annually with up
-      to 40% discount.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.hyperbolic.ai/
-    baseURL: https://api.hyperbolic.xyz
-    tags:
-      - GPU
-      - Compute
-      - Infrastructure
-      - SSH
-    properties:
-      - type: Documentation
-        url: https://docs.hyperbolic.ai/
-      - type: Pricing
-        url: https://hyperbolic.ai/pricing
+- aid: hyperbolic:inference
+  name: Hyperbolic Serverless Inference API
+  description: >-
+    OpenAI-compatible inference API for 25+ open-source models. Surfaces include text chat, vision, image
+    generation (FLUX, Stable Diffusion, LoRA adapters), and audio (Melo TTS). Pay-as-you-go from $0.0001
+    per 1K tokens.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.hyperbolic.ai/docs/inference/overview
+  baseURL: https://api.hyperbolic.xyz/v1
+  tags:
+  - AI
+  - LLM
+  - Chat Completions
+  - Vision
+  - Image Generation
+  - Audio
+  - OpenAI Compatible
+  properties:
+  - type: Documentation
+    url: https://docs.hyperbolic.ai/
+  - type: GettingStarted
+    url: https://docs.hyperbolic.ai/docs/inference/quickstart
+  - type: Signup
+    url: https://app.hyperbolic.ai/
+  - type: Pricing
+    url: https://hyperbolic.ai/pricing
+  - type: RateLimits
+    url: https://docs.hyperbolic.ai/docs/inference/performance-limits
+  - type: Integrations
+    url: https://docs.hyperbolic.ai/docs/inference/integrations
+- aid: hyperbolic:gpu
+  name: Hyperbolic On-Demand GPU API
+  description: >-
+    Bare-metal GPU rental with SSH access for full control. Hourly rates from $1.39-$1.99 with no long-term
+    commitments. Reserved clusters available monthly/annually with up to 40% discount.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.hyperbolic.ai/
+  baseURL: https://api.hyperbolic.xyz
+  tags:
+  - GPU
+  - Compute
+  - Infrastructure
+  - SSH
+  properties:
+  - type: Documentation
+    url: https://docs.hyperbolic.ai/
+  - type: Pricing
+    url: https://hyperbolic.ai/pricing
+- aid: hyperbolic:hyperbolic-audio-api
+  name: Hyperbolic Audio API
+  description: The Audio API from Hyperbolic — 1 operation(s) for audio.
+  humanURL: https://docs.hyperbolic.ai/docs/inference/overview
+  baseURL: https://api.hyperbolic.xyz/v1
+  tags:
+  - Audio
+  properties:
+  - type: OpenAPI
+    url: openapi/hyperbolic-audio-api-openapi.yml
+- aid: hyperbolic:hyperbolic-chat-api
+  name: Hyperbolic Chat API
+  description: The Chat API from Hyperbolic — 1 operation(s) for chat.
+  humanURL: https://docs.hyperbolic.ai/docs/inference/overview
+  baseURL: https://api.hyperbolic.xyz/v1
+  tags:
+  - Chat
+  properties:
+  - type: OpenAPI
+    url: openapi/hyperbolic-chat-api-openapi.yml
+- aid: hyperbolic:hyperbolic-completions-api
+  name: Hyperbolic Completions API
+  description: The Completions API from Hyperbolic — 1 operation(s) for completions.
+  humanURL: https://docs.hyperbolic.ai/docs/inference/overview
+  baseURL: https://api.hyperbolic.xyz/v1
+  tags:
+  - Completions
+  properties:
+  - type: OpenAPI
+    url: openapi/hyperbolic-completions-api-openapi.yml
+- aid: hyperbolic:hyperbolic-image-api
+  name: Hyperbolic Image API
+  description: The Image API from Hyperbolic — 1 operation(s) for image.
+  humanURL: https://docs.hyperbolic.ai/docs/inference/overview
+  baseURL: https://api.hyperbolic.xyz/v1
+  tags:
+  - Image
+  properties:
+  - type: OpenAPI
+    url: openapi/hyperbolic-image-api-openapi.yml
+- aid: hyperbolic:hyperbolic-models-api
+  name: Hyperbolic Models API
+  description: The Models API from Hyperbolic — 1 operation(s) for models.
+  humanURL: https://docs.hyperbolic.ai/docs/inference/overview
+  baseURL: https://api.hyperbolic.xyz/v1
+  tags:
+  - Models
+  properties:
+  - type: OpenAPI
+    url: openapi/hyperbolic-models-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/hyperbolic-agentic-access.yml
