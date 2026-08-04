@@ -1,0 +1,22 @@
+{
+  "provider": "hyperbolic",
+  "sources": [
+    "hyperbolic-audio-api-openapi.yml",
+    "hyperbolic-chat-api-openapi.yml",
+    "hyperbolic-completions-api-openapi.yml",
+    "hyperbolic-image-api-openapi.yml",
+    "hyperbolic-models-api-openapi.yml"
+  ],
+  "outputs": [
+    "hyperbolic-audio-api-openapi.yml",
+    "hyperbolic-chat-api-openapi.yml",
+    "hyperbolic-completions-api-openapi.yml",
+    "hyperbolic-image-api-openapi.yml",
+    "hyperbolic-models-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
