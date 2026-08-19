@@ -1,0 +1,131 @@
+{
+  "item": [
+    {
+      "id": "26bb0e9a-38ff-468f-a10c-77e82503d28e",
+      "name": "Image",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1accb305-638d-41e8-bb99-81d020183d43",
+          "name": "Generate image",
+          "request": {
+            "name": "Generate image",
+            "description": {},
+            "url": {
+              "path": [
+                "image",
+                "generation"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model_name\": \"<string>\",\n  \"prompt\": \"<string>\",\n  \"height\": \"<integer>\",\n  \"width\": \"<integer>\",\n  \"steps\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "38329de1-fb52-4b35-93b7-024a779a6aba",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "image",
+                    "generation"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"model_name\": \"SDXL1.0-base\",\n  \"prompt\": \"<string>\",\n  \"height\": \"<integer>\",\n  \"width\": \"<integer>\",\n  \"steps\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.hyperbolic.xyz/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "54ee1c6e-dfcd-4b6e-82e1-99f555ddfbc4",
+    "name": "Hyperbolic Inference Audio Image API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Hyperbolic offers OpenAI-compatible serverless inference for chat, completion,\nimage generation and audio. Authenticate with an API key as a Bearer token.\n\n\nContact Support:\n Name: Hyperbolic Docs",
+      "type": "text/plain"
+    }
+  }
+}
