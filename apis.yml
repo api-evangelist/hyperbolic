@@ -22,6 +22,15 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hyperbolic.png
 tags:
+  - Artificial Intelligence
+  - LLM
+  - Inference
+  - GPU
+  - Open-Source
+  - Serverless
+  - Image-Generation
+  - Audio
+tags_raw:
   - AI
   - LLM
   - Inference
@@ -44,6 +53,14 @@ apis:
   humanURL: https://docs.hyperbolic.ai/docs/inference/overview
   baseURL: https://api.hyperbolic.xyz/v1
   tags:
+  - Artificial Intelligence
+  - LLM
+  - Chat Completions
+  - Vision
+  - Image-Generation
+  - Audio
+  - OpenAI-Compatible
+  tags_raw:
   - AI
   - LLM
   - Chat Completions
