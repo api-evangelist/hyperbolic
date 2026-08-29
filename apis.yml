@@ -7,6 +7,18 @@ description: >-
   LLM inference. Hosts 25+ open-source models with OpenAI-compatible chat, vision, image
   generation (FLUX, Stable Diffusion, LoRA), and audio (Melo TTS) APIs. Reserved-cluster
   pricing available with 3-12 month commitments and up to 40% discount.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
