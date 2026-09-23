@@ -1,11 +1,7 @@
 {
   "provider": "hyperbolic",
   "sources": [
-    "hyperbolic-audio-api-openapi.yml",
-    "hyperbolic-chat-api-openapi.yml",
-    "hyperbolic-completions-api-openapi.yml",
-    "hyperbolic-image-api-openapi.yml",
-    "hyperbolic-models-api-openapi.yml"
+    "_original/hyperbolic-openapi.yml"
   ],
   "outputs": [
     "hyperbolic-audio-api-openapi.yml",
@@ -17,6 +13,26 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "hyperbolic-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "hyperbolic-openapi.yml: tagged paths POST /chat/completions -> Chat",
+    "hyperbolic-openapi.yml: tagged paths POST /completions -> Completions",
+    "hyperbolic-openapi.yml: tagged paths GET /models -> Models",
+    "hyperbolic-openapi.yml: tagged paths POST /image/generation -> Image",
+    "hyperbolic-openapi.yml: tagged paths POST /audio/generation -> Audio",
+    "hyperbolic-openapi.yml: declared missing tag: Audio",
+    "hyperbolic-openapi.yml: declared missing tag: Chat",
+    "hyperbolic-openapi.yml: declared missing tag: Completions",
+    "hyperbolic-openapi.yml: declared missing tag: Image",
+    "hyperbolic-openapi.yml: declared missing tag: Models",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "hyperbolic-audio-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "hyperbolic-chat-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "hyperbolic-completions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "hyperbolic-image-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "hyperbolic-models-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
