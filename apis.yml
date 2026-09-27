@@ -39,9 +39,9 @@ tags:
   - LLM
   - Inference
   - GPU
-  - Open-Source
+  - Open Source
   - Serverless
-  - Image-Generation
+  - Image Generation
   - Audio
 tags_raw:
   - AI
@@ -52,6 +52,8 @@ tags_raw:
   - Serverless
   - Image Generation
   - Audio
+  - Open-Source
+  - Image-Generation
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.23'
@@ -70,7 +72,7 @@ apis:
   - LLM
   - Chat Completions
   - Vision
-  - Image-Generation
+  - Image Generation
   - Audio
   - OpenAI-Compatible
   tags_raw:
@@ -81,6 +83,7 @@ apis:
   - Image Generation
   - Audio
   - OpenAI Compatible
+  - Image-Generation
   properties:
   - type: Documentation
     url: https://docs.hyperbolic.ai/
