@@ -128,16 +128,6 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/hyperbolic-audio-api-openapi.yml
-- aid: hyperbolic:hyperbolic-chat-api
-  name: Hyperbolic Chat API
-  description: The Chat API from Hyperbolic — 1 operation(s) for chat.
-  humanURL: https://docs.hyperbolic.ai/docs/inference/overview
-  baseURL: https://api.hyperbolic.xyz/v1
-  tags:
-  - Chat
-  properties:
-  - type: OpenAPI
-    url: openapi/hyperbolic-chat-api-openapi.yml
 - aid: hyperbolic:hyperbolic-completions-api
   name: Hyperbolic Completions API
   description: The Completions API from Hyperbolic — 1 operation(s) for completions.
@@ -168,6 +158,16 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/hyperbolic-models-api-openapi.yml
+- aid: hyperbolic:hyperbolic-chat-completions-api
+  name: Hyperbolic Chat Completions API
+  description: The Chat Completions API from Hyperbolic — 1 operation(s) for chat completions.
+  humanURL: https://docs.hyperbolic.ai/docs/inference/overview
+  baseURL: https://api.hyperbolic.xyz/v1
+  tags:
+  - Chat Completions
+  properties:
+  - type: OpenAPI
+    url: openapi/hyperbolic-chat-completions-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/hyperbolic-agentic-access.yml
