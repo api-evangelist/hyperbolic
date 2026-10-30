@@ -64,6 +64,34 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-This profile has been **merged into [hyperbolic-ai](https://apis.io/providers/hyperbolic-ai/)** — the two records described the same company, and that one is canonical.
+> **Retired — merged into [Hyperbolic](https://apis.io/providers/hyperbolic-ai/).** The two records described the same company, and that one is canonical. Nothing in this repository is maintained any more.
 
-Nothing here is maintained any more. The company's current profile, rating and artifacts are at [apis.io/providers/hyperbolic-ai/](https://apis.io/providers/hyperbolic-ai/).
+**Why:** Duplicate of hyperbolic-ai (same company). hyperbolic-ai is canonical: hyperbolic.xyz 301-redirects to www.hyperbolic.ai, and the slug follows that domain. Every operation in the five hyperbolic split specs is already in a hyperbolic-ai spec; the doc-only Serverless Inference and On-Demand GPU entries and the LiteLLM / Portkey routing edges were moved into hyperbolic-ai with x-moved-from. Pages map 1:1 to the hyperbolic-ai equivalents where one exists, otherwise to the provider page. hyperbolic stays live as a pointer profile with no APIs. Approved by Kin Lane 2026-10-13.
+
+**Retired:** 2026-10-13
+
+## Where to go now
+
+The current profile, APIs, artifacts and rating for Hyperbolic are on APIs.io at **[apis.io/providers/hyperbolic-ai/](https://apis.io/providers/hyperbolic-ai/)**.
+
+Pages that used to belong to this profile now live at:
+
+- [Hyperbolic Ai Agentic Access](https://apis.io/agentic-access/hyperbolic-ai/hyperbolic-ai-agentic-access/)
+- [Hyperbolic Ai On Demand Gpu API](https://apis.io/apis/hyperbolic-ai/hyperbolic-ai-on-demand-gpu-api/)
+- [Hyperbolic Ai Audio Generation API](https://apis.io/apis/hyperbolic-ai/hyperbolic-ai-audio-generation-api/)
+- [Hyperbolic Ai Chat Completions API](https://apis.io/apis/hyperbolic-ai/hyperbolic-ai-chat-completions-api/)
+- [Hyperbolic Ai Completions API](https://apis.io/apis/hyperbolic-ai/hyperbolic-ai-completions-api/)
+- [Hyperbolic Ai Image Generation API](https://apis.io/apis/hyperbolic-ai/hyperbolic-ai-image-generation-api/)
+- [Hyperbolic Ai Models API](https://apis.io/apis/hyperbolic-ai/hyperbolic-ai-models-api/)
+- [Hyperbolic Ai Serverless Inference API](https://apis.io/apis/hyperbolic-ai/hyperbolic-ai-serverless-inference-api/)
+- [Open Hyperbolic Ai Completions API](https://apis.io/collections/hyperbolic-ai/open-hyperbolic-ai-completions-api/)
+- [Open Hyperbolic Ai Models API](https://apis.io/collections/hyperbolic-ai/open-hyperbolic-ai-models-api/)
+- [Hyperbolic Ai FinOps](https://apis.io/finops/hyperbolic-ai/hyperbolic-ai-finops/)
+- [Hyperbolic Ai Plans Pricing](https://apis.io/plans/hyperbolic-ai/hyperbolic-ai-plans-pricing/)
+- [Hyperbolic Ai Rate Limits](https://apis.io/rate-limits/hyperbolic-ai/hyperbolic-ai-rate-limits/)
+- [Hyperbolic Ai Authentication](https://apis.io/security/hyperbolic-ai/hyperbolic-ai-authentication/)
+- [Hyperbolic Ai Domain Security](https://apis.io/security/hyperbolic-ai/hyperbolic-ai-domain-security/)
+
+## Open an issue
+
+Issues about Hyperbolic belong on the canonical profile: [open one on api-evangelist/hyperbolic-ai](https://github.com/api-evangelist/hyperbolic-ai/issues/new). If you think this merge was a mistake — these were really two companies — say so there or email [info@apievangelist.com](mailto:info@apievangelist.com).
